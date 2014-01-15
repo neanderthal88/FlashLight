@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">手电筒</string>
+    <string name="action_settings">Settings</string>
+    <string name="click">Open Menu</string>
+    <string name="back">返回</string>
+    <string name="screen">屏幕</string>
+    <string name="flashlight">闪光灯</string>
+    <string name="set_bright">更改亮度</string>
+    <string name="set_color">更改颜色</string>
+    <string name="about_us">关于</string>
+    <string name="exit">退出</string>
+
+</resources>
