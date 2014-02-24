@@ -1,4 +1,4 @@
-package com.smile.smileflashlightforth;
+ï»¿package com.smile.smileflashlightforth;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -27,7 +27,7 @@ public class ScreenActivity extends Activity {
 		ExitApplication.getInstance().addActivity(this);
 	}
 
-	//µã»÷ÆÁÄ»´¥·¢ÊÂ¼ş
+	//ç‚¹å‡»å±å¹•è§¦å‘äº‹ä»¶
 //	@Override
 //    public boolean onTouchEvent(MotionEvent event){
 //    	openOptionsMenu();
@@ -73,9 +73,9 @@ public class ScreenActivity extends Activity {
 	
 	public void setColor()
 	{
-		final String[] colors = {"°×É«","ºìÉ«","ºÚÉ«","»ÆÉ«","À¶É«","·ÛÉ«","ÂÌÉ«","×ÏÉ«"};
+		final String[] colors = {"ç™½è‰²","çº¢è‰²","é»‘è‰²","é»„è‰²","è“è‰²","ç²‰è‰²","ç»¿è‰²","ç´«è‰²"};
 		new AlertDialog.Builder(ScreenActivity.this)
-		.setTitle("Ñ¡ÔñÑÕÉ«")
+		.setTitle("é€‰æ‹©é¢œè‰²")
 		.setItems(colors, new OnClickListener() {
 			
 			@Override
@@ -123,8 +123,8 @@ public class ScreenActivity extends Activity {
 	{
 		final String[] brights = {"100%", "75%", "50%","25%","10%"}; 
     	new AlertDialog.Builder(ScreenActivity.this) 
-    	.setTitle("Ñ¡ÔñÁÁ¶È") 
-    	.setSingleChoiceItems(brights, i, new DialogInterface.OnClickListener() { //´Ë´¦Êı×ÖÎªÑ¡ÏîµÄÏÂ±ê£¬´Ó0¿ªÊ¼£¬ ±íÊ¾Ä¬ÈÏÄÄÏî±»Ñ¡ÖĞ 
+    	.setTitle("é€‰æ‹©äº®åº¦") 
+    	.setSingleChoiceItems(brights, i, new DialogInterface.OnClickListener() { //æ­¤å¤„æ•°å­—ä¸ºé€‰é¡¹çš„ä¸‹æ ‡ï¼Œä»0å¼€å§‹ï¼Œ è¡¨ç¤ºé»˜è®¤å“ªé¡¹è¢«é€‰ä¸­ 
     	public void onClick(DialogInterface dialog, int which) { 
     	//Toast.makeText(getApplicationContext(), brights[which],Toast.LENGTH_SHORT).show(); 
     	i = which;
