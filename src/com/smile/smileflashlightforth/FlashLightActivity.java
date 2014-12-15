@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class FlashLightActivity extends Activity {
 	private Button button;
@@ -95,6 +96,17 @@ public class FlashLightActivity extends Activity {
 		Intent intent = new Intent();
 		intent.setClass(FlashLightActivity.this, ScreenActivity.class);
 		startActivity(intent);
+	}
+	
+	private static long back_pressed;
+	@Override
+	public void onBackPressed(){
+		if (back_pressed + 2000 > System.currentTimeMillis()) {
+			super.onBackPressed();			
+		} else {
+			Toast.makeText(getBaseContext(), "Press again to exit.", Toast.LENGTH_SHORT).show();
+			back_pressed = System.currentTimeMillis();
+		}			
 	}
 	
 }
